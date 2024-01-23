@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Book";
+  src: url("assets/fonts/FuseV.2Display-Book.woff2") format("woff2");
+}
+@font-face {
+  font-family: "BookItalic";
+  src: url("assets/fonts/FuseV.2Display-BookItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ExtraBoldBook";
+  src: url("assets/fonts/FuseV.2Display-ExtraBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ExtraBoldItalicBook";
+  src: url("assets/fonts/FuseV.2Display-ExtraBoldItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "TextBook";
+  src: url("assets/fonts/FuseV.2Text-Book.woff2") format("woff2");
+}
+@font-face {
+  font-family: "TextBookItalic";
+  src: url("assets/fonts/FuseV.2Text-BookItalic.woff2") format("woff2");
+}
+
+:root {
+  --book-font: "Book", sans-serif;
+  --book-italic-font: "BookItalic", sans-serif;
+  --extra-bold-book-font: "ExtraBoldBook", sans-serif;
+  --extra-bold-italic-book-font: "ExtraBoldItalicBook", sans-serif;
+  --text-book-font: "TextBook", sans-serif;
+  --text-book-italic-font: "TextBookItalic", sans-serif;
+
+  --book-font-weight: Book;
+  --book-extra-boldfont-weight: ExtraBold;
+
+  --xs-letter-spacing: -2%;
+  --s-letter-spacing: -1%;
+  --m-letter-spacing: 0%;
+  --l-letter-spacing: 2%;
+  --xl-letter-spacing: 8%;
+
+  --tight-line-height: 14px;
+  --compact-line-height: 16px;
+  --normal-line-height: 24px;
+  --relaxed-line-height: 28px;
+  --loose-line-height: 32px;
+  --cozy-line-height: 40px;
+  --spacious-line-height: 56px;
+  --airy-line-height: 88px;
+  --generous-line-height: 120px;
+
+  --tiny-font-size: 14px;
+  --small-font-size: 16px;
+  --medium-font-size: 24px;
+  --large-font-size: 36px;
+  --x-large-font-size: 54px;
+  --xx-large-font-size: 81px;
+  --huge-font-size: 122px;
+}
