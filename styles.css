@@ -59,3 +59,15 @@
   --xx-large-font-size: 81px;
   --huge-font-size: 122px;
 }
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--book-font);
+}
