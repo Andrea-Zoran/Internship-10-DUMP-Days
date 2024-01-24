@@ -78,7 +78,7 @@ body {
   margin-top: 152px;
 }
 .call-to-action h6 {
-  width: 1030px;
+  max-width: 1030px;
   text-align: center;
   font-size: var(--medium-font-size);
   font-weight: var(--book-font);
