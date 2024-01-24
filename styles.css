@@ -33,6 +33,7 @@
 
   --book-font-weight: Book;
   --book-extra-boldfont-weight: ExtraBold;
+  --book-xxl-boldfont-weight: 800;
 
   --xs-letter-spacing: -2%;
   --s-letter-spacing: -1%;
