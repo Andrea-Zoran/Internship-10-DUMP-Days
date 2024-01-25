@@ -70,6 +70,7 @@ body {
   flex-direction: column;
   justify-content: center;
   font-family: var(--book-font);
+  overflow-x: hidden;
 }
 .call-to-action {
   max-width: 1030px;
