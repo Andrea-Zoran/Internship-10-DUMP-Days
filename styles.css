@@ -241,7 +241,7 @@ body {
   color: transparent;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 767px) {
   .call-to-action {
     margin-top: 136px;
     max-width: 332px;
