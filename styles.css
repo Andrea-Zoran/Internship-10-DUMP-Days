@@ -72,6 +72,88 @@ body {
   font-family: var(--book-font);
   overflow-x: hidden;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1232px;
+  height: 44px;
+  margin-top: 32px;
+  margin-left: 104px;
+}
+.header-logo img {
+  height: 44px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-nav a {
+  text-decoration: none;
+  margin: 0 20px;
+}
+.header-nav a:first-child:hover {
+  background: conic-gradient(
+    from 118deg at 29.17% 50%,
+    #2361a6 107.5842833518982deg,
+    #c75593 232.76602506637573deg,
+    #694696 336.43709421157837deg
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+.header-nav button {
+  margin-left: 20px;
+  width: 151px;
+  height: 44px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+      125deg,
+      #0d8ed3 5.44%,
+      #0b60bb 17.95%,
+      #0a3aa7 36.44%,
+      #6a387d 69.53%,
+      #c53754 105.59%,
+      #fa5240 117.57%
+    )
+    1;
+  font-size: var(--small-font-size);
+  line-height: var(--compact-line-height);
+  font-family: var(--extra-bold-book-font);
+  font-weight: var(--book-extra-boldfont-weight);
+  letter-spacing: var(--xl-letter-spacing);
+}
+.header-mobile {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 375px;
+  height: 80px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+.header-mobile .header-logo img {
+  width: 24px;
+  height: 28.71px;
+}
+.hamburger {
+  display: none;
+  width: 24px;
+  padding: 9.33px 4px 8px 4px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 22px;
+}
+.hamburger-line {
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: white;
+  margin: 5px 0;
+}
 .call-to-action {
   max-width: 1030px;
   max-height: 336px;
@@ -349,7 +431,28 @@ body {
     width: 100%;
   }
 }
-@media screen and (max-width: 830px) {
+@media screen and (min-width: 767px) and (max-width: 1440px) {
+  .header {
+    width: 100%;
+  }
+  .header-nav button {
+    margin-right: 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: none;
+  }
+  .header-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+  .header-mobile .hamburger {
+    display: block;
+    padding-right: 25px;
+  }
   .call-to-action {
     margin-top: 136px;
     max-width: 332px;
