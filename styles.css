@@ -327,7 +327,9 @@ body {
   width: 100%;
   height: auto;
   border: 1px solid #000;
-  background-color: pink;
+}
+.location-section  * {
+  background-color: transparent;
 }
 .location-map {
   position: relative;
@@ -346,7 +348,6 @@ body {
   left: 68.42%;
   width: 160px;
   height: 142.71px;
-  background-color: transparent;
 }
 .location-content {
   position: absolute;
@@ -354,7 +355,6 @@ body {
   left: 208px;
   max-width: 259px;
   z-index: 2;
-  background-color: transparent !important;
 }
 .location-header {
   margin-bottom: 16px;
