@@ -92,6 +92,18 @@ body {
   text-decoration: none;
   margin: 0 20px;
 }
+.header-nav a:first-child:hover {
+  background: conic-gradient(
+      from 118deg at 29.17% 50%,
+      #2361a6 107.5842833518982deg,
+      #c75593 232.76602506637573deg,
+      #694696 336.43709421157837deg
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
 .header-nav button {
   margin-left: 20px;
   width: 151px;
@@ -120,6 +132,7 @@ body {
   width: 375px;
   height: 80px;
   padding: 24px;
+  box-sizing: border-box;
 }
 .header-mobile .header-logo img {
   width: 24px;
@@ -310,6 +323,15 @@ body {
   color: transparent;
 }
 
+@media screen and (min-width: 767px) and (max-width: 1440px) {
+  .header {
+    width: 100%;
+  }
+  .header-nav button {
+    margin-right: 150px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header {
     display: none;
@@ -317,9 +339,11 @@ body {
   .header-mobile {
     display: flex;
     justify-content: space-between;
+    width: auto;
   }
   .header-mobile .hamburger {
     display: block;
+    padding-right: 25px; 
   }
   .call-to-action {
     margin-top: 136px;
