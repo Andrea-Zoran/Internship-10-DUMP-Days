@@ -94,10 +94,10 @@ body {
 }
 .header-nav a:first-child:hover {
   background: conic-gradient(
-      from 118deg at 29.17% 50%,
-      #2361a6 107.5842833518982deg,
-      #c75593 232.76602506637573deg,
-      #694696 336.43709421157837deg
+    from 118deg at 29.17% 50%,
+    #2361a6 107.5842833518982deg,
+    #c75593 232.76602506637573deg,
+    #694696 336.43709421157837deg
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -391,7 +391,115 @@ body {
   height: 72px;
   line-height: 24px;
 }
-
+.fly-talks {
+  max-width: 1231px;
+  max-height: 772px;
+  display: flex;
+  gap: 100px;
+  margin-top: 524px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ft-left {
+  max-width: 460px;
+  max-height: 332px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.ft-left h1 {
+  font-size: var(--huge-font-size);
+  letter-spacing: var(--xs-letter-spacing);
+  font-family: var(--extra-bold-book-font);
+  margin-bottom: 56px;
+}
+.ft-left p {
+  max-width: 400px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.51);
+  font-size: var(--small-font-size);
+  line-height: var(--normal-line-height);
+  margin-bottom: 40px;
+}
+.ft-button-wrapper button {
+  width: 151px;
+  height: 44px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+      125deg,
+      #0d8ed3 5.44%,
+      #0b60bb 17.95%,
+      #0a3aa7 36.44%,
+      #6a387d 69.53%,
+      #c53754 105.59%,
+      #fa5240 117.57%
+    )
+    1;
+  font-size: var(--small-font-size);
+  line-height: var(--compact-line-height);
+  font-family: var(--extra-bold-book-font);
+  font-weight: var(--book-extra-boldfont-weight);
+  letter-spacing: var(--xl-letter-spacing);
+}
+.ft-right {
+  max-width: 644px;
+  max-height: 772px;
+  position: relative;
+}
+.ft-image1 {
+  position: relative;
+  z-index: 2;
+  max-width: 411px;
+  max-height: 304px;
+  top: 55px;
+  left: 120px;
+  object-fit: cover;
+}
+.ft-image2 {
+  position: relative;
+  z-index: 1;
+  max-width: 304px;
+  max-height: 400px;
+  bottom: 92px;
+  object-fit: cover;
+}
+.ft-image3 {
+  position: relative;
+  z-index: 4;
+  max-width: 328px;
+  max-height: 540px;
+  object-fit: cover;
+}
+@media screen and (max-width: 1050px) {
+  .ft-image1 {
+    position: relative;
+    z-index: 2;
+    top: 65px;
+    left: 90px;
+    object-fit: cover;
+    width: 300px;
+    height: auto;
+  }
+  .ft-image2 {
+    position: relative;
+    z-index: 1;
+    bottom: 92px;
+    right: auto;
+    object-fit: cover;
+    width: 195px;
+    height: auto;
+  }
+  .ft-image3 {
+    position: relative;
+    z-index: 4;
+    left: auto;
+    object-fit: cover;
+    width: 230px;
+    height: auto;
+  }
+  .ft-right {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 767px) and (max-width: 1440px) {
   .header {
     width: 100%;
@@ -447,7 +555,7 @@ body {
   }
   .header-mobile .hamburger {
     display: block;
-    padding-right: 25px; 
+    padding-right: 25px;
   }
   .call-to-action {
     margin-top: 136px;
@@ -474,6 +582,46 @@ body {
   .big-numbers-info-wrapper {
     max-width: 100%;
   }
+  .fly-talks {
+    flex-direction: column;
+  }
+  .ft-left {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ft-left h1 {
+    font-size: var(--x-large-font-size);
+    margin-bottom: 22px;
+  }
+  .ft-left p {
+    font-size: var(--small-font-size);
+    width: 100%;
+  }
+  .ft-image1 {
+    position: relative;
+    z-index: 2;
+    top: 65px;
+    left: 90px;
+    object-fit: cover;
+    width: 300px;
+    height: auto;
+  }
+  .ft-image2 {
+    position: relative;
+    z-index: 1;
+    bottom: 92px;
+    right: auto;
+    object-fit: cover;
+    width: 195px;
+    height: auto;
+  }
+  .ft-image3 {
+    position: relative;
+    z-index: 4;
+    left: auto;
+    object-fit: cover;
+    width: 230px;
+    height: auto;
+  }
 }
-
-
