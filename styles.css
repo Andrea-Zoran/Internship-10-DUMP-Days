@@ -391,6 +391,61 @@ body {
   height: 72px;
   line-height: 24px;
 }
+.livestream-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  border: 1px solid #000;
+}
+.livestream-content {
+  max-width: 504px; 
+}
+.livestream-section h2 {
+  font-family: var(--extra-bold-book-font);
+  font-size: var(--huge-font-size);
+  margin-bottom: 15px;
+  width: 504px;
+}
+.livestream-section p {
+  font-size: var(--small-font-size);
+  margin-bottom: 50px;
+  width: 400px;
+}
+.livestream-section button {
+  margin-left: 20px;
+  width: 151px;
+  height: 44px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+      125deg,
+      #0d8ed3 5.44%,
+      #0b60bb 17.95%,
+      #0a3aa7 36.44%,
+      #6a387d 69.53%,
+      #c53754 105.59%,
+      #fa5240 117.57%
+    )
+    1;
+  font-size: var(--small-font-size);
+  line-height: var(--compact-line-height);
+  font-family: var(--extra-bold-book-font);
+  font-weight: var(--book-extra-boldfont-weight);
+  letter-spacing: var(--xl-letter-spacing);
+}
+.livestream-img {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; 
+  width: 1506.362px; 
+  height: 1334.531px;
+}
+.livestream-img img {
+  width: 100%;
+  height: auto;
+}
 .fly-talks {
   max-width: 1231px;
   max-height: 772px;
