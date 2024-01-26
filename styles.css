@@ -523,6 +523,9 @@ body {
   .header {
     display: none;
   }
+  .location-content {
+    left: 10px;
+  }
   .location-map {
     background-size: contain;
     background-repeat: no-repeat;
