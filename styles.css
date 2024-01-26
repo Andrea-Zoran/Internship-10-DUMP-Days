@@ -322,6 +322,63 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
+.location-section {
+  position: relative;
+  width: 1439px;
+  height: 889px;
+  border: 1px solid #000;
+  background-image: url('./assets/visuals/split-map.png');
+  background-size: cover;
+  background-position: center;
+}
+.location-content {
+  position: absolute;
+  top: 246px;
+  left: 208px;
+  max-width: 259px;
+}
+.location-header {
+  margin-bottom: 16px;
+}
+.location-header p {
+  font-size: var(--medium-font-size);
+  font-weight: 300px;
+  line-height: 28px;
+  letter-spacing: var(--m-letter-spacing);
+  text-align: left;
+  margin: 0;
+}
+.location-header h3 {
+  font-family: var(--extra-bold-book-font);
+  font-size: var(--huge-font-size);
+  font-weight: var(--book-xxl-boldfont-weight);
+  line-height: 120px;
+  letter-spacing: var(--xs-letter-spacing);
+}
+.location-copy h2 {
+  width: 402px;
+  height: 136px;
+  font-family: var(--extra-bold-book-font);
+  font-size: var(--x-large-font-size);
+  font-weight: 800;
+  line-height: 68px;
+  letter-spacing: var(--s-letter-spacing);
+  text-align: left;
+}
+.location-copy p {
+  font-size: var(--small-font-size);
+  line-height: var(--compact-line-height);
+  width: 402px;
+  height: 72px;
+  line-height: 24px;
+}
+.location-pin {
+  position: absolute;
+  top: 460px;
+  left: 968px;
+  width: 160px;
+  height: 142.71px;
+}
 
 @media screen and (min-width: 767px) and (max-width: 1440px) {
   .header {
