@@ -375,7 +375,7 @@ body {
   letter-spacing: var(--xs-letter-spacing);
 }
 .location-copy h2 {
-  width: 402px;
+  width: 100%;
   height: 136px;
   font-family: var(--extra-bold-book-font);
   font-size: var(--x-large-font-size);
@@ -387,7 +387,7 @@ body {
 .location-copy p {
   font-size: var(--small-font-size);
   line-height: var(--compact-line-height);
-  width: 402px;
+  width: 100%;
   height: 72px;
   line-height: 24px;
 }
