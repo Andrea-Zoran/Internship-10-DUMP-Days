@@ -328,7 +328,7 @@ body {
   height: auto;
   border: 1px solid #000;
 }
-.location-section  * {
+.location-section * {
   background-color: transparent;
 }
 .location-map {
@@ -336,13 +336,13 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 889px; 
-  background-image: url('./assets/visuals/split-map.png');
+  height: 889px;
+  background-image: url("./assets/visuals/split-map.png");
   background-size: cover;
   background-position: center;
   z-index: 1;
 }
-.location-pin img{
+.location-pin img {
   position: absolute;
   top: 55.59%;
   left: 68.42%;
@@ -353,8 +353,9 @@ body {
   position: absolute;
   top: 246px;
   left: 208px;
-  max-width: 259px;
+  max-width: 402px;
   z-index: 2;
+  height: 396px;
 }
 .location-header {
   margin-bottom: 16px;
@@ -468,6 +469,7 @@ body {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 317px;
 }
 .ft-left {
   max-width: 460px;
@@ -592,6 +594,9 @@ body {
   .header {
     display: none;
   }
+  .location-content {
+    left: 10px;
+  }
   .location-map {
     background-size: contain;
     background-repeat: no-repeat;
@@ -610,7 +615,7 @@ body {
   .location-header p {
     font-size: var(--small-font-size);
   }
-  .location-header h3{
+  .location-header h3 {
     font-size: var(--xx-large-font-size);
     line-height: var(--spacious-line-height);
   }
