@@ -376,7 +376,7 @@ body {
   letter-spacing: var(--xs-letter-spacing);
 }
 .location-copy h2 {
-  width: 100%;
+  width: 402px; /* promjena iz 100%*/
   height: 136px;
   font-family: var(--extra-bold-book-font);
   font-size: var(--x-large-font-size);
@@ -388,9 +388,77 @@ body {
 .location-copy p {
   font-size: var(--small-font-size);
   line-height: var(--compact-line-height);
-  width: 100%;
+  width: 402px; /* promjena iz 100%*/
   height: 72px;
   line-height: 24px;
+}
+.intermediate-text {
+  font-size: var(--medium-font-size);
+  line-height: var(--relaxed-line-height);
+  text-align: center;
+  margin-top: 348px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  max-width: 1030px;
+}
+.livestream-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  border: 1px solid #000;
+}
+.livestream-content {
+  max-width: 504px; 
+}
+.livestream-section h2 {
+  font-family: var(--extra-bold-book-font);
+  font-size: var(--huge-font-size);
+  margin-bottom: 15px;
+  width: 504px;
+}
+.livestream-section p {
+  font-size: var(--small-font-size);
+  margin-bottom: 50px;
+  width: 400px;
+}
+.livestream-section button {
+  margin-left: 20px;
+  width: 151px;
+  height: 44px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+      125deg,
+      #0d8ed3 5.44%,
+      #0b60bb 17.95%,
+      #0a3aa7 36.44%,
+      #6a387d 69.53%,
+      #c53754 105.59%,
+      #fa5240 117.57%
+    )
+    1;
+  font-size: var(--small-font-size);
+  line-height: var(--compact-line-height);
+  font-family: var(--extra-bold-book-font);
+  font-weight: var(--book-extra-boldfont-weight);
+  letter-spacing: var(--xl-letter-spacing);
+}
+#livestreamButtonMobile {
+  display: none;
+}
+.livestream-img {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; 
+  width: 1506.362px; 
+  height: 1334.531px;
+}
+.livestream-img img {
+  width: 100%;
+  height: auto;
 }
 .fly-talks {
   max-width: 1231px;
@@ -517,6 +585,9 @@ body {
     top: 50.59%;
     left: 66.42%;
   }
+  .livestream-img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -546,12 +617,15 @@ body {
   }
   .location-header h3 {
     font-size: var(--xx-large-font-size);
-    line-height: 64px;
+    line-height: var(--spacious-line-height);
   }
   .location-copy h2 {
     font-size: var(--large-font-size);
-    line-height: 48px;
+    line-height: var(--cozy-line-height);
     margin-top: 100px;
+  }
+  .intermediate-text {
+    margin-top: 700px;
   }
   .header-mobile {
     display: flex;
@@ -586,6 +660,36 @@ body {
   }
   .big-numbers-info-wrapper {
     max-width: 100%;
+  }
+  .livestream-section {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 700px;
+    width: 100%;
+  }
+  .livestream-content, .livestream-img {
+    width: 100%;
+  }
+  .livestream-img {
+    order: 2;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: auto;  
+    display: block; 
+    max-width: 60%;
+  }
+  .livestream-content {
+    order: 1;
+  }
+  #livestreamButtonDesktop {
+    display: none;
+  }
+  #livestreamButtonMobile {
+    display: block;
+  }
+  .livestream-section h2 {
+      font-size: var(--xx-large-font-size);
+      line-height: var( --airy-line-height);
   }
   .fly-talks {
     flex-direction: column;
