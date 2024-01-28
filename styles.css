@@ -460,6 +460,54 @@ body {
   width: 100%;
   height: auto;
 }
+.speakers-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 158px;
+}
+.speakers-copy {
+  margin-left: 104px;
+  margin-top: 70px;
+}
+.speakers-section h2 {
+  font-family: var(--extra-bold-book-font);
+  font-size: var(--xx-large-font-size);
+  line-height: var(--airy-line-height);
+  margin-bottom: 32px;
+  width: 504px;
+}
+.speakers-section p {
+  font-size: var(--small-font-size);
+  margin-bottom: 50px;
+  width: 482px;
+}
+.speakers-visuals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+}
+.speaker-card {
+  display: flex;
+  flex: 0 0 calc(33.333% - 24px);
+  flex-direction: column;
+  align-items:flex-start;
+}
+.speaker-card h5 {
+  color: white;
+  font-size: var(--small-font-size);
+  font-weight: 100;
+  line-height: var(--compact-line-height);
+  margin-top: 4px;
+  margin-bottom: 7px;
+}
+.speaker-card p {
+  color: darkgray;
+  font-size: var(--small-font-size);
+  line-height: var(--compact-line-height);
+  letter-spacing: var(--s-letter-spacing);
+  margin-bottom: 10px;
+}
 .fly-talks {
   max-width: 1231px;
   max-height: 772px;
