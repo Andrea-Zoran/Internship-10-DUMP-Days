@@ -818,8 +818,131 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
 }
+.golden-sponsors {
+  max-width: 1232px;
+  margin-top: 514px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.golden-sponsors h1 {
+  font-size: var(--huge-font-size);
+  font-family: var(--extra-bold-book-font);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 265px;
+  text-align: center;
+}
+.logos-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 922px;
+
+  margin-bottom: 175px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logos-wrapper img:nth-of-type(2) {
+  height: 20px;
+  margin: auto 0;
+}
+.gs-img-txts {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+.image3 {
+  position: relative;
+  display: block;
+}
+
+.image3:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    123deg,
+    rgba(13, 142, 211, 0.68) -3.37%,
+    rgba(10, 58, 167, 0.68) 17.75%,
+    rgba(197, 55, 84, 0.68) 53.11%,
+    rgba(250, 82, 64, 0.68) 70.34%,
+    rgba(252, 221, 163, 0.68) 103.4%
+  );
+}
+.gs-img-txts {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+.gs-img-txt {
+  display: flex;
+  gap: 40px;
+}
+.gs-img-txt p {
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--small-font-size);
+  justify-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.gs-img-txt p span {
+  font-size: var(--medium-font-size);
+  font-family: var(--extra-bold-book-font);
+  margin-bottom: 11px;
+}
+.gs-img-txts hr {
+  display: none;
+}
 
 @media screen and (max-width: 1050px) {
+  .gs-img-txts hr {
+    display: flex;
+    margin: 0 auto;
+    opacity: 0.1;
+    width: 80%;
+  }
+  .image3 {
+    max-width: 327px;
+    max-height: 218px;
+    margin: 0 auto;
+  }
+  .gs-img-text p {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .gs-img-txt:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .gs-img-txt {
+    flex-direction: column;
+  }
+  .logos-wrapper {
+    flex-direction: column;
+    gap: 56px;
+  }
+  .logos-wrapper img {
+    width: 247px;
+    height: 46px;
+    margin: 0 auto;
+  }
+  .logos-wrapper img:nth-of-type(2) {
+    width: 318px;
+    height: 33px;
+    margin: 0 auto;
+  }
+  .logos-wrapper img:nth-of-type(3) {
+    width: 318px;
+    height: 48px;
+    margin: 0 auto;
+  }
+  .golden-sponsors h1 {
+    font-size: var(--x-large-font-size);
+  }
   .chevron-icon2 {
     display: none;
   }
@@ -914,6 +1037,10 @@ body {
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1440px) {
+  .gs-img-text p {
+    max-width: 327px;
+    margin: 0 auto;
+  }
   .friends-and-partners p:nth-of-type(2) {
     font-size: var(--large-font-size);
   }
@@ -993,6 +1120,10 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .gs-img-text p {
+    max-width: 327px;
+    margin: 0 auto;
+  }
   .friends-and-partners p:nth-of-type(2) {
     font-size: var(--large-font-size);
   }
