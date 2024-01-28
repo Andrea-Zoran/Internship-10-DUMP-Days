@@ -410,7 +410,7 @@ body {
   border: 1px solid #000;
 }
 .livestream-content {
-  max-width: 504px; 
+  max-width: 504px;
 }
 .livestream-section h2 {
   font-family: var(--extra-bold-book-font);
@@ -452,8 +452,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0; 
-  width: 1506.362px; 
+  flex-shrink: 0;
+  width: 1506.362px;
   height: 1334.531px;
 }
 .livestream-img img {
@@ -795,6 +795,30 @@ body {
 .live-word2 {
   display: none;
 }
+.friends-and-partners {
+  max-width: 799px;
+  margin: 0 auto;
+  margin-top: 524px;
+}
+.friends-and-partners p {
+  font-size: var(--small-font-size);
+  margin-bottom: 25px;
+  text-align: center;
+}
+.friends-and-partners p:nth-of-type(2) {
+  color: transparent;
+  font-size: var(--x-large-font-size);
+  font-family: var(--extra-bold-book-font);
+  background: linear-gradient(
+    45deg,
+    #00b5c1 9.43%,
+    #4336b9 41.88%,
+    #fa4343 106.56%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 @media screen and (max-width: 1050px) {
   .chevron-icon2 {
     display: none;
@@ -885,8 +909,14 @@ body {
   .ft-right {
     width: 100%;
   }
+  .friends-and-partners p:nth-of-type(2) {
+    font-size: var(--large-font-size);
+  }
 }
 @media screen and (min-width: 767px) and (max-width: 1440px) {
+  .friends-and-partners p:nth-of-type(2) {
+    font-size: var(--large-font-size);
+  }
   .profile-card {
     justify-content: flex-start;
   }
@@ -963,6 +993,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .friends-and-partners p:nth-of-type(2) {
+    font-size: var(--large-font-size);
+  }
   .profile-card {
     justify-content: flex-start;
     margin-left: 0;
@@ -1049,15 +1082,16 @@ body {
     padding-top: 700px;
     width: 100%;
   }
-  .livestream-content, .livestream-img {
+  .livestream-content,
+  .livestream-img {
     width: 100%;
   }
   .livestream-img {
     order: 2;
     margin-top: 0;
     margin-right: 0;
-    margin-left: auto;  
-    display: block; 
+    margin-left: auto;
+    display: block;
     max-width: 60%;
   }
   .livestream-content {
@@ -1070,8 +1104,8 @@ body {
     display: block;
   }
   .livestream-section h2 {
-      font-size: var(--xx-large-font-size);
-      line-height: var( --airy-line-height);
+    font-size: var(--xx-large-font-size);
+    line-height: var(--airy-line-height);
   }
   .fly-talks {
     flex-direction: column;
