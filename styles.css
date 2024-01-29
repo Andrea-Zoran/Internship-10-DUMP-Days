@@ -898,8 +898,216 @@ body {
 .gs-img-txts hr {
   display: none;
 }
+.job-market {
+  margin-bottom: 200px;
+}
+.jm-header {
+  margin-top: 200px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.jm-header div {
+  width: 50%;
+}
+.jm-header h1 {
+  font-size: var(--x-large-font-size);
+  font-family: var(--extra-bold-book-font);
+  margin-bottom: 50px;
+}
+.jm-header p {
+  font-size: var(--small-font-size);
+  line-height: var(--normal-line-height);
+  margin-bottom: 50px;
+}
+.jm-first-cards {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+}
+.jm-first-cards::-webkit-scrollbar {
+  display: none;
+}
 
+.jm-fc-card {
+  flex: 0 0 auto;
+  max-width: 816px;
+  max-height: 336px;
+  display: inline-flex;
+  padding: 24px 40px 24px 24px;
+  align-items: center;
+  gap: 24px;
+  margin-right: 20px;
+}
+
+.middle-card-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-right: 55px;
+}
+.shift-image {
+  width: 59px;
+  height: 40px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: flex-start;
+}
+.middle-card-part h1 {
+  font-size: var(--large-font-size);
+  font-family: var(--extra-bold-book-font);
+  max-width: 233px;
+  margin-bottom: 150px;
+}
+.middle-card-part div {
+  display: flex;
+}
+.middle-card-part div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+}
+.middle-card-part div img:nth-of-type(2) {
+  width: 10px;
+  height: 19px;
+  margin-right: 5px;
+}
+.middle-card-part2 h1 {
+  font-size: var(--large-font-size);
+  font-family: var(--extra-bold-book-font);
+  max-width: 233px;
+  margin-bottom: 150px;
+}
+.middle-card-part2 div {
+  display: flex;
+}
+.middle-card-part2 div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+}
+.middle-card-part2 div img:nth-of-type(2) {
+  width: 10px;
+  height: 19px;
+  margin-right: 5px;
+}
+.right-card-part {
+  max-width: 396px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.right-card-part p:first-of-type {
+  color: #e9e9ec;
+  opacity: 0.7;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  white-space: initial;
+}
+.middle-card-part h1 br {
+  display: none;
+}
+.arrows2 {
+  display: none;
+}
+.arrows3 {
+  margin-top: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.arrows4 {
+  display: none;
+}
 @media screen and (max-width: 1050px) {
+  .arrows {
+    display: none;
+  }
+  .arrows2 {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .arrows3 {
+    display: none;
+  }
+  .arrows4 {
+    display: flex;
+  }
+  .jm-fc-card {
+    max-width: 90%;
+    flex-direction: column;
+    max-height: 592px;
+    gap: 0;
+  }
+  .made-up-div-for-image {
+    width: 100%;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .stylish {
+    height: 44px;
+    width: 100%;
+  }
+  .middle-card-part h1 br {
+    display: flex;
+  }
+  .middle-card-part div:nth-of-type(1) {
+    max-width: 175px;
+    max-height: 140px;
+  }
+  .middle-card-part h1 {
+    max-width: 175px;
+    word-wrap: break-word;
+    margin-bottom: 0;
+    height: 140px;
+    overflow-wrap: break-word;
+  }
+  .middle-card-part div:nth-of-type(2) {
+    max-width: 70px;
+  }
+  .middle-card-part div:nth-of-type(2) img {
+    width: 20px;
+    height: 20px;
+  }
+  .middle-card-part {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 390px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    gap: 50px;
+  }
+  .middle-card-part2 {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 390px;
+    width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+    gap: 50px;
+  }
+  .know-more {
+    position: relative;
+    top: -130px;
+  }
+  .jm-first-cards {
+    max-height: 1230px;
+  }
+  .jm-header div:nth-of-type(1) {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .jm-header div:nth-of-type(2) {
+    width: 0%;
+  }
+
   .gs-img-txts hr {
     display: flex;
     margin: 0 auto;
