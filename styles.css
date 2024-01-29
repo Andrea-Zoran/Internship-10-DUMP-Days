@@ -990,6 +990,30 @@ body {
 .gs-img-txts hr {
   display: none;
 }
+.other-sponsor-content {
+  max-width: 1232px;
+  margin-top: 330px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.other-sponsor-content h2 {
+  font-size: var(--x-large-font-size);
+  font-family: var(--extra-bold-book-font);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 127px;
+  text-align: center;
+}
+.osc-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.osc-row img {
+  margin: 60px;
+}
 .job-market {
   margin-bottom: 200px;
 }
@@ -1418,6 +1442,9 @@ body {
     width: 100%;
   }
   .speakers-visuals {
+    width: 100%;
+  }
+  .silver-sponsors {
     width: 100%;
   }
 }
