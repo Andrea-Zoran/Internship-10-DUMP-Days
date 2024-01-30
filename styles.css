@@ -1290,6 +1290,55 @@ body {
   background-color: transparent;
   height: 2264px;
 }
+
+.app-section {
+  margin-top: 400px;
+  margin-top: 200px;
+}
+
+.app-section-header {
+  font-size: var(--huge-font-size);
+  font-family: var(--extra-bold-book-font);
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.app-section-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.app-section-copy {
+  margin-top: 160px;
+  margin-left: 100px;
+}
+
+.app-section-copy h5 {
+  margin-bottom: 100px;
+  font-size: var(--small-font-size);
+}
+
+.app-section-paragraph h3 {
+  font-size: var(--x-large-font-size);
+  font-family: var(--extra-bold-book-font);
+  margin-top: 160px;
+  margin-bottom: 30px;
+}
+
+.app-section-paragraph p {
+  width: 333px;
+}
+
+.app-section-visual {
+  padding-left: 420px;
+  padding-top: 160px;
+  padding-right: 130px;
+}
+
+
+
+>>>>>>> c5438bb (Added app section dekstop version)
 @media screen and (max-width: 1050px) {
   .g-header {
     font-size: var(--x-large-font-size);
