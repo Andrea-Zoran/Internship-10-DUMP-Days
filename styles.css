@@ -2057,4 +2057,23 @@ body {
   .app-section-copy h5, .app-section-paragraph h3, .app-section-paragraph p {
     text-align: start;
   }
+  .testimonial-section {
+    background-image: url('./assets/visuals/mobile-testimonial.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .testimonial-visual {
+    padding-top: 50px;
+    padding-left: 10px;
+  }
+  .testimonial-copy h3 {
+    margin-top: 70px;
+  }
+  .testimonial-copy p {
+    max-width: 100%;
+  }
 }
