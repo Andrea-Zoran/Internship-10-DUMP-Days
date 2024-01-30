@@ -1444,7 +1444,7 @@ body {
   .speakers-visuals {
     width: 100%;
   }
-  .silver-sponsors {
+  .other-sponsor-content {
     width: 100%;
   }
 }
@@ -1615,6 +1615,29 @@ body {
     width: 100%;
     font-size: var(--xx-large-font-size);
     line-height: var(--airy-line-height);
+  }
+  .other-sponsor-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .silver-mobile-version {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .silver-sponsors .osc-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+  }
+  .silver-sponsors .osc-row img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .media .osc-row {
+    flex-wrap: wrap;
   }
   .fly-talks {
     flex-direction: column;
