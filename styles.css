@@ -1172,7 +1172,7 @@ body {
 }
 .app-section-visual {
   padding-left: 420px;
-  padding-top: 160px;
+  padding-top: 150px;
   padding-right: 130px;
 }
 
@@ -1734,7 +1734,9 @@ body {
   .app-section-visual img {
     margin-bottom: 100px;
     margin-left: 20px;
-    width: 100%;
+    width: 80%;
+    max-width: 100%;
+    display: block;
   }
   .app-section-copy {
     margin-left: 30px;
