@@ -1328,6 +1328,35 @@ body {
   padding-top: 150px;
   padding-right: 130px;
 }
+.testimonial-section {
+  background-image: url('./assets/visuals/testimonial-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 400px;
+  display: flex;
+  flex-direction: row;
+}
+.testimonial-section * {
+  background-color: transparent;
+}
+.testimonial-visual {
+  padding-left: 200px;
+}
+.testimonial-copy {
+  padding-left: 70px;
+}
+.testimonial-copy h3 {
+  padding-top: 50px;
+  font-size: var(--xx-large-font-size);
+  font-family: var(--extra-bold-book-font);
+  margin-bottom: 24px;
+}
+.testimonial-copy p {
+  font-size: var(--small-font-size);
+  width: 501px;
+  margin-bottom: 32px;
+}
 
 @media screen and (max-width: 1050px) {
   .g-header {
