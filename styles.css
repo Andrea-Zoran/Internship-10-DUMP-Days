@@ -528,18 +528,18 @@ body {
   height: auto;
 }
 .speaker-img-wrapper::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    to bottom, 
-    rgba(13, 142, 211, 0.3), 
-    rgba(10, 58, 167, 0.3), 
-    rgba(197, 55, 84, 0.5), 
-    rgba(250, 82, 64, 0.5), 
+    to bottom,
+    rgba(13, 142, 211, 0.3),
+    rgba(10, 58, 167, 0.3),
+    rgba(197, 55, 84, 0.5),
+    rgba(250, 82, 64, 0.5),
     rgba(252, 221, 163, 0.4)
   );
   mix-blend-mode: multiply;
@@ -637,6 +637,7 @@ body {
   max-width: 920px;
   margin: 0 auto;
   margin-top: 400px;
+  margin-bottom: 200px;
 }
 .tt-header {
   font-size: var(--huge-font-size);
@@ -1297,7 +1298,7 @@ body {
   margin-top: 800px;
   max-width: 920px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 300px;
 }
 .form-header {
   margin-top: 200px;
@@ -1404,7 +1405,7 @@ body {
   padding-right: 130px;
 }
 .testimonial-section {
-  background-image: url('./assets/visuals/testimonial-background.png');
+  background-image: url("./assets/visuals/testimonial-background.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1433,6 +1434,7 @@ body {
   margin-bottom: 32px;
 }
 .faq-section {
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
 }
@@ -1463,7 +1465,7 @@ body {
   margin-bottom: 66px;
 }
 .faq-copy span {
-  background: linear-gradient(89deg, #37F3E1 -40.27%, #A109FF 101.93%);
+  background: linear-gradient(89deg, #37f3e1 -40.27%, #a109ff 101.93%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1473,7 +1475,7 @@ body {
   height: 0px;
   flex-shrink: 0;
   stroke-width: 1px;
-  stroke: var(--White, #F5F5F7);
+  stroke: var(--White, #f5f5f7);
   opacity: 0.1;
   margin-top: 44px;
 }
@@ -1483,7 +1485,7 @@ body {
   margin-top: 44px;
   margin-bottom: 44px;
 }
-.footer-link{
+.footer-link {
   text-decoration: underline;
 }
 .footer-logos {
@@ -1503,8 +1505,6 @@ body {
   object-fit: contain;
   margin-right: 20px;
 }
-
-
 
 @media screen and (max-width: 1050px) {
   .form-header {
@@ -2064,10 +2064,11 @@ body {
     display: block;
   }
   .livestream-section h2 {
-      font-size: var(--xx-large-font-size);
-      line-height: var(--airy-line-height);
+    font-size: var(--xx-large-font-size);
+    line-height: var(--airy-line-height);
   }
   .speakers-section {
+    margin-top: 200px;
     flex-direction: column;
     align-items: center;
   }
@@ -2213,11 +2214,13 @@ body {
   .app-section-copy h5 {
     margin-bottom: 0;
   }
-  .app-section-copy h5, .app-section-paragraph h3, .app-section-paragraph p {
+  .app-section-copy h5,
+  .app-section-paragraph h3,
+  .app-section-paragraph p {
     text-align: start;
   }
   .testimonial-section {
-    background-image: url('./assets/visuals/mobile-testimonial.png');
+    background-image: url("./assets/visuals/mobile-testimonial.png");
     background-size: cover;
     display: flex;
     flex-direction: column-reverse;
@@ -2240,14 +2243,14 @@ body {
     margin-bottom: 1200px;
   }
   .faq-visual img {
-    content: url('/assets/visuals/faq-mobile.png');
+    content: url("/assets/visuals/faq-mobile.png");
     width: 450px;
     height: 900px;
     margin-bottom: 300px;
   }
   .faq-copy {
     padding-top: 200px;
-    text-align:start;
+    text-align: start;
     margin-left: 24px;
     padding-left: 0;
     width: 100%;
@@ -2270,7 +2273,10 @@ body {
     gap: 20px;
     margin-bottom: 20px;
   }
-  .footer-logos, .social-media, .footer-link, .footer-rights {
+  .footer-logos,
+  .social-media,
+  .footer-link,
+  .footer-rights {
     width: 100%;
     justify-content: center;
     text-align: center;
@@ -2278,7 +2284,8 @@ body {
   .social-media img {
     margin: 0 10px;
   }
-  .footer-link a, .footer-rights {
+  .footer-link a,
+  .footer-rights {
     margin-top: 20px;
   }
 }
