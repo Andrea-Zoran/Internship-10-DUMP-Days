@@ -1145,7 +1145,7 @@ body {
   transform: rotate(-14.833deg);
   width: 2864px;
   height: 2264px;
-  margin-bottom: 600px;
+  margin-bottom: 200px;
   gap: 16px;
   display: grid;
   margin-left: 00px;
@@ -1288,7 +1288,82 @@ body {
   position: relative;
   left: 200px;
   background-color: transparent;
-  height: 2264px;
+  height: 0px;
+  display: none;
+}
+.form {
+  top: 200px;
+  position: relative;
+  margin-top: 800px;
+  max-width: 920px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.form-header {
+  margin-top: 200px;
+  margin-bottom: 48px;
+  font-size: var(--huge-font-size);
+  font-family: var(--extra-bold-book-font);
+  letter-spacing: var(--xs-letter-spacing);
+  white-space: nowrap;
+}
+.form-p {
+  font-size: var(--small-font-size);
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 23px;
+}
+.icons-wrapper {
+  width: 144px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 124px;
+}
+.form-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 504px;
+  margin: 0 auto;
+  gap: 15px;
+}
+.form-form input {
+  max-height: 66px;
+  max-width: 504px;
+  padding: 24px;
+  border: none;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.111);
+}
+.p-button-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+}
+.p-button-holder p {
+  text-align: end;
+}
+.p-button-holder button {
+  margin-left: auto;
+  margin-top: 10px;
+  width: 151px;
+  height: 44px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+      125deg,
+      #0d8ed3 5.44%,
+      #0b60bb 17.95%,
+      #0a3aa7 36.44%,
+      #6a387d 69.53%,
+      #c53754 105.59%,
+      #fa5240 117.57%
+    )
+    1;
+  font-size: var(--small-font-size);
+  line-height: var(--compact-line-height);
+  font-family: var(--extra-bold-book-font);
+  font-weight: var(--book-extra-boldfont-weight);
+  letter-spacing: var(--xl-letter-spacing);
 }
 
 .app-section {
@@ -1432,6 +1507,12 @@ body {
 
 
 @media screen and (max-width: 1050px) {
+  .form-header {
+    font-size: var(--x-large-font-size);
+    max-width: 317px;
+    white-space: wrap;
+    text-align: center;
+  }
   .g-header {
     font-size: var(--x-large-font-size);
     font-family: var(--extra-bold-book-font);
@@ -1514,6 +1595,8 @@ body {
   }
   .galerry-wrapper0 {
     right: 300px;
+    display: block;
+    height: 0px;
   }
   .g-header {
     font-size: var(--x-large-font-size);
