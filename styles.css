@@ -1408,6 +1408,9 @@ body {
   margin-top: 44px;
   margin-bottom: 44px;
 }
+.footer-link{
+  text-decoration: underline;
+}
 .footer-logos {
   display: flex;
   flex-direction: row;
@@ -2151,11 +2154,13 @@ body {
   }
   .faq-section {
     flex-direction: column-reverse;
+    margin-bottom: 1200px;
   }
   .faq-visual img {
     content: url('/assets/visuals/faq-mobile.png');
     width: 450px;
     height: 900px;
+    margin-bottom: 300px;
   }
   .faq-copy {
     padding-top: 200px;
@@ -2163,5 +2168,34 @@ body {
     margin-left: 24px;
     padding-left: 0;
     width: 100%;
+  }
+  .footer-section hr {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-logos {
+    flex-direction: column-reverse;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-logos, .social-media, .footer-link, .footer-rights {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .social-media img {
+    margin: 0 10px;
+  }
+  .footer-link a, .footer-rights {
+    margin-top: 20px;
   }
 }
