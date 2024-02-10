@@ -562,6 +562,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 317px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .ft-left {
   max-width: 460px;
@@ -618,6 +620,7 @@ body {
 }
 .ft-image2 {
   position: relative;
+  right: 10px;
   z-index: 1;
   max-width: 304px;
   max-height: 400px;
@@ -626,6 +629,7 @@ body {
 }
 .ft-image3 {
   position: relative;
+  left: 10px;
   z-index: 4;
   max-width: 328px;
   max-height: 540px;
@@ -671,7 +675,7 @@ body {
   color: transparent;
   -webkit-background-clip: text;
   position: relative;
-  padding-bottom: 15px;
+  padding: 15px;
   border: none;
 }
 
@@ -728,7 +732,7 @@ body {
 .ttec-left {
   background-color: rgba(245, 245, 247, 0.05);
   height: 100%;
-  max-width: 70%;
+  max-width: 100%;
 }
 .ttec-right {
   max-width: 728px;
@@ -747,7 +751,7 @@ body {
   line-height: var(--normal-line-height);
   background-color: transparent;
   word-wrap: break-word;
-  max-width: 100%;
+  max-width: 80%;
 }
 .ttec-right hr {
   color: white;
@@ -818,6 +822,9 @@ body {
   padding-right: 8px;
   background-blend-mode: hue, normal;
   font-weight: 400;
+  text-align: center;
+  width: 25px;
+  height: 20px;
 }
 .ttex-right-header-wrapper h3:nth-of-type(2) {
   font-size: var(--tiny-font-size);
@@ -1058,6 +1065,15 @@ body {
   align-items: center;
   gap: 24px;
   margin-right: 20px;
+}
+
+.java-dev {
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.group-icon {
+  margin-right: 5px;
 }
 
 .middle-card-part {
@@ -1335,6 +1351,9 @@ body {
   border: none;
   border-bottom: 0.5px solid rgba(128, 128, 128, 0.111);
 }
+.form-form input:nth-of-type(1) {
+  background-color: rgba(27, 27, 27, 0.564);
+}
 .p-button-holder {
   display: flex;
   flex-direction: column;
@@ -1505,8 +1524,59 @@ body {
   object-fit: contain;
   margin-right: 20px;
 }
+.know-more {
+  position: relative;
+  top: -136px;
+}
+.ttec-left p {
+  width: 100px;
+}
+.chevron-mobile {
+  display: none;
+}
 
 @media screen and (max-width: 1050px) {
+  .chevron-mobile {
+    display: flex;
+    margin-left: auto;
+  }
+  .ft-image1,
+  .ft-image2,
+  .ft-image3 {
+    position: absolute;
+    object-fit: cover;
+    height: auto;
+  }
+  .ft-image1 {
+    z-index: 2;
+    top: 65px;
+    left: 90px;
+    object-fit: cover;
+    max-width: 250px;
+    height: auto;
+  }
+  .ft-image2 {
+    z-index: 1;
+    bottom: 92px;
+    right: auto;
+    object-fit: cover;
+    max-width: 165px;
+    height: auto;
+  }
+  .ft-image3 {
+    z-index: 4;
+    left: auto;
+    object-fit: cover;
+    max-width: 180px;
+    height: auto;
+  }
+  .gs-img-txts {
+    max-width: 327px;
+  }
+  .gs-img-text p {
+    max-width: 327px;
+    margin: 0 auto;
+  }
   .form-header {
     font-size: var(--x-large-font-size);
     max-width: 317px;
@@ -1636,6 +1706,7 @@ body {
   }
   .arrows2 {
     display: flex;
+    justify-content: end;
     margin-bottom: 40px;
   }
   .arrows3 {
@@ -1643,6 +1714,7 @@ body {
   }
   .arrows4 {
     display: flex;
+    justify-content: end;
   }
   .jm-fc-card {
     max-width: 90%;
@@ -1655,10 +1727,15 @@ body {
     margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
+    height: 44px;
+    position: relative;
+    top: -140px;
+    left: 145px;
   }
   .stylish {
-    height: 44px;
-    width: 100%;
+    /* height: 44px;
+    width: 100%; */
+    transform: rotate(90deg);
   }
   .middle-card-part h1 br {
     display: flex;
@@ -1703,7 +1780,7 @@ body {
   }
   .know-more {
     position: relative;
-    top: -130px;
+    top: -140px;
   }
   .jm-first-cards {
     max-height: 1230px;
@@ -1771,6 +1848,7 @@ body {
   }
   .ttec-left {
     display: flex;
+    gap: 5px;
   }
   .ttex-right-header-wrapper h3 {
     flex-direction: column;
@@ -1805,7 +1883,7 @@ body {
     max-width: 130px;
   }
   .ttec-left {
-    max-width: 200px;
+    max-width: 375px;
   }
   .ttec-left p {
     width: 100px;
@@ -1819,32 +1897,7 @@ body {
   .ttec-right2 {
     width: auto;
   }
-  .ft-image1 {
-    position: relative;
-    z-index: 2;
-    top: 65px;
-    left: 90px;
-    object-fit: cover;
-    width: 300px;
-    height: auto;
-  }
-  .ft-image2 {
-    position: relative;
-    z-index: 1;
-    bottom: 92px;
-    right: auto;
-    object-fit: cover;
-    width: 195px;
-    height: auto;
-  }
-  .ft-image3 {
-    position: relative;
-    z-index: 4;
-    left: auto;
-    object-fit: cover;
-    width: 230px;
-    height: auto;
-  }
+
   .ft-right {
     width: 100%;
   }
@@ -1865,7 +1918,7 @@ body {
     justify-content: flex-start;
   }
   .ttec-left {
-    max-width: 200px;
+    max-width: 375px;
   }
   .chevron-icon {
     display: none;
@@ -1958,7 +2011,7 @@ body {
     margin-left: 0;
   }
   .ttec-left {
-    max-width: 200px;
+    max-width: 375px;
   }
   .tt-header {
     font-size: var(--large-font-size);
