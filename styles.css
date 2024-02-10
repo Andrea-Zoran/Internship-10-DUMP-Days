@@ -562,6 +562,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 317px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .ft-left {
   max-width: 460px;
