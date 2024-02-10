@@ -751,7 +751,7 @@ body {
   line-height: var(--normal-line-height);
   background-color: transparent;
   word-wrap: break-word;
-  max-width: 100%;
+  max-width: 80%;
 }
 .ttec-right hr {
   color: white;
