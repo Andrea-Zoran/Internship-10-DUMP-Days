@@ -618,6 +618,7 @@ body {
 }
 .ft-image2 {
   position: relative;
+  right: 10px;
   z-index: 1;
   max-width: 304px;
   max-height: 400px;
@@ -626,6 +627,7 @@ body {
 }
 .ft-image3 {
   position: relative;
+  left: 10px;
   z-index: 4;
   max-width: 328px;
   max-height: 540px;
@@ -1523,6 +1525,36 @@ body {
 }
 
 @media screen and (max-width: 1050px) {
+  .ft-image1,
+  .ft-image2,
+  .ft-image3 {
+    position: absolute;
+    object-fit: cover;
+    height: auto;
+  }
+  .ft-image1 {
+    z-index: 2;
+    top: 65px;
+    left: 90px;
+    object-fit: cover;
+    max-width: 250px;
+    height: auto;
+  }
+  .ft-image2 {
+    z-index: 1;
+    bottom: 92px;
+    right: auto;
+    object-fit: cover;
+    max-width: 165px;
+    height: auto;
+  }
+  .ft-image3 {
+    z-index: 4;
+    left: auto;
+    object-fit: cover;
+    max-width: 180px;
+    height: auto;
+  }
   .gs-img-txts {
     max-width: 327px;
   }
@@ -1849,32 +1881,7 @@ body {
   .ttec-right2 {
     width: auto;
   }
-  .ft-image1 {
-    position: relative;
-    z-index: 2;
-    top: 65px;
-    left: 90px;
-    object-fit: cover;
-    width: 300px;
-    height: auto;
-  }
-  .ft-image2 {
-    position: relative;
-    z-index: 1;
-    bottom: 92px;
-    right: auto;
-    object-fit: cover;
-    width: 195px;
-    height: auto;
-  }
-  .ft-image3 {
-    position: relative;
-    z-index: 4;
-    left: auto;
-    object-fit: cover;
-    width: 230px;
-    height: auto;
-  }
+
   .ft-right {
     width: 100%;
   }
