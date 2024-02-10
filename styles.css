@@ -1060,6 +1060,11 @@ body {
   margin-right: 20px;
 }
 
+.java-dev {
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
 .middle-card-part {
   display: flex;
   flex-direction: column;
