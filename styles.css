@@ -1656,6 +1656,7 @@ body {
   }
   .arrows2 {
     display: flex;
+    justify-content: end;
     margin-bottom: 40px;
   }
   .arrows3 {
@@ -1663,6 +1664,7 @@ body {
   }
   .arrows4 {
     display: flex;
+    justify-content: end;
   }
   .jm-fc-card {
     max-width: 90%;
@@ -1675,10 +1677,15 @@ body {
     margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
+    height: 44px;
+    position: relative;
+    top: -140px;
+    left: 145px;
   }
   .stylish {
-    height: 44px;
-    width: 100%;
+    /* height: 44px;
+    width: 100%; */
+    transform: rotate(90deg);
   }
   .middle-card-part h1 br {
     display: flex;
