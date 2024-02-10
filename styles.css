@@ -732,7 +732,7 @@ body {
 .ttec-left {
   background-color: rgba(245, 245, 247, 0.05);
   height: 100%;
-  max-width: 70%;
+  max-width: 100%;
 }
 .ttec-right {
   max-width: 728px;
@@ -822,6 +822,9 @@ body {
   padding-right: 8px;
   background-blend-mode: hue, normal;
   font-weight: 400;
+  text-align: center;
+  width: 25px;
+  height: 20px;
 }
 .ttex-right-header-wrapper h3:nth-of-type(2) {
   font-size: var(--tiny-font-size);
@@ -1525,6 +1528,9 @@ body {
   position: relative;
   top: -136px;
 }
+.ttec-left p {
+  width: 100px;
+}
 
 @media screen and (max-width: 1050px) {
   .ft-image1,
@@ -1869,7 +1875,7 @@ body {
     max-width: 130px;
   }
   .ttec-left {
-    max-width: 200px;
+    max-width: 250px;
   }
   .ttec-left p {
     width: 100px;
