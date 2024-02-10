@@ -1848,6 +1848,7 @@ body {
   }
   .ttec-left {
     display: flex;
+    gap: 5px;
   }
   .ttex-right-header-wrapper h3 {
     flex-direction: column;
