@@ -92,7 +92,7 @@ body {
   text-decoration: none;
   margin: 0 20px;
 }
-.header-nav a:first-child:hover {
+.header-nav a:hover {
   background: conic-gradient(
     from 118deg at 29.17% 50%,
     #2361a6 107.5842833518982deg,
@@ -124,6 +124,19 @@ body {
   font-family: var(--extra-bold-book-font);
   font-weight: var(--book-extra-boldfont-weight);
   letter-spacing: var(--xl-letter-spacing);
+}
+.header-nav button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-image: linear-gradient(
+      125deg,
+      #0d8ed3 5.44%,
+      #0b60bb 17.95%,
+      #0a3aa7 36.44%,
+      #6a387d 69.53%,
+      #c53754 105.59%,
+      #fa5240 117.57%
+    )
+    1;
 }
 .header-mobile {
   display: none;
@@ -424,7 +437,7 @@ body {
   width: 400px;
 }
 .livestream-section button {
-  margin-left: 20px;
+  margin-left: 0;
   width: 151px;
   height: 44px;
   border: 1px solid transparent;
@@ -1971,14 +1984,20 @@ body {
   .header {
     display: none;
   }
-  .location-content {
-    left: 10px;
-  }
   .location-map {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top center;
+    background-image: url('./assets/visuals/split-map.png');
+    background-size: cover;
+    background-position: center;
     height: 500px;
+    padding-top: 100px;
+  }
+  .location-content {
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 402px;
   }
   .location-pin img {
     width: 20px;
@@ -1987,22 +2006,28 @@ body {
     left: 72.42%;
   }
   .location-header {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .location-content {
-    margin-left: 200px;
+    margin-left: 50px;
   }
   .location-header p {
     font-size: var(--small-font-size);
   }
   .location-header h3 {
-    font-size: var(--xx-large-font-size);
+    font-size: var(--x-large-font-size);
     line-height: var(--spacious-line-height);
+    margin-bottom: 0;
   }
   .location-copy h2 {
     font-size: var(--large-font-size);
     line-height: var(--cozy-line-height);
-    margin-top: 100px;
+    margin-top: 40px;
+    max-width: 100%;
+  }
+  .location-copy p {
+    width: 350px;
+    max-width: 100%;
   }
   .intermediate-text {
     margin-top: 700px;
@@ -2043,7 +2068,7 @@ body {
   }
   .livestream-section {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 700px;
     width: 100%;
   }
@@ -2057,7 +2082,7 @@ body {
     margin-right: 0;
     margin-left: auto;
     display: block;
-    max-width: 60%;
+    max-width: 100%;
   }
   .livestream-content {
     order: 1;
@@ -2067,10 +2092,16 @@ body {
   }
   #livestreamButtonMobile {
     display: block;
+    margin-left: 0;
   }
   .livestream-section h2 {
-    font-size: var(--xx-large-font-size);
-    line-height: var(--airy-line-height);
+    width: 300px;
+    font-size: var(--x-large-font-size);
+  }
+  .livestream-section p {
+    width: 300px;
+    font-size: var(--small-font-size);
+    line-height: var(--loose-line-height);
   }
   .speakers-section {
     margin-top: 200px;
@@ -2083,14 +2114,16 @@ body {
     margin-bottom: 40px;
   }
   .speakers-section h2 {
-    font-size: var(--xx-large-font-size);
-    line-height: var(--airy-line-heigh);
+    font-size: var(--x-large-font-size);
+    line-height: var(--airy-line-height);
+    width: 400px;
     margin-bottom: 32px;
     max-width: 100%;
   }
   .speakers-section p {
-    font-size: var(--medium-font-size);
-    line-height: var(--airy-line-heigh);
+    font-size: var(--small-font-size);
+    line-height: var(--cozy-line-height);
+    width: 330px;
     max-width: 100%;
   }
   .speakers-visuals {
@@ -2100,7 +2133,6 @@ body {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-    gap: 8px;
   }
   .speaker-column-mobile-version {
     flex-grow: 1;
@@ -2108,9 +2140,12 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 40px;
+    margin-right: 10px;
   }
   .speakers-visuals-mobile-version .speaker-column-mobile-version:nth-child(2) {
     margin-top: 112px;
+    margin-left: 20px;
+    margin-right: 70px;
   }
   .speaker-img-wrapper img {
     max-width: 100%;
@@ -2120,6 +2155,14 @@ body {
     width: 100%;
     font-size: var(--xx-large-font-size);
     line-height: var(--airy-line-height);
+  }
+  .speaker-card p {
+    font-size: var(--tiny-font-size);
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+  .speaker-card img {
+    max-width: 100%;
   }
   .other-sponsor-content {
     display: flex;
