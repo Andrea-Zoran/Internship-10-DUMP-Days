@@ -1344,6 +1344,9 @@ body {
   border: none;
   border-bottom: 0.5px solid rgba(128, 128, 128, 0.111);
 }
+.form-form input:nth-of-type(1) {
+  background-color: rgba(27, 27, 27, 0.564);
+}
 .p-button-holder {
   display: flex;
   flex-direction: column;
