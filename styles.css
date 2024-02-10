@@ -1520,6 +1520,13 @@ body {
 }
 
 @media screen and (max-width: 1050px) {
+  .gs-img-txts {
+    max-width: 327px;
+  }
+  .gs-img-text p {
+    max-width: 327px;
+    margin: 0 auto;
+  }
   .form-header {
     font-size: var(--x-large-font-size);
     max-width: 317px;
