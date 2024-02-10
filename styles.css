@@ -1065,6 +1065,10 @@ body {
   white-space: normal;
 }
 
+.group-icon {
+  margin-right: 5px;
+}
+
 .middle-card-part {
   display: flex;
   flex-direction: column;
@@ -1510,6 +1514,10 @@ body {
   object-fit: contain;
   margin-right: 20px;
 }
+.know-more {
+  position: relative;
+  top: -136px;
+}
 
 @media screen and (max-width: 1050px) {
   .form-header {
@@ -1708,7 +1716,7 @@ body {
   }
   .know-more {
     position: relative;
-    top: -130px;
+    top: -140px;
   }
   .jm-first-cards {
     max-height: 1230px;
